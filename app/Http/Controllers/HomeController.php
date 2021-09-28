@@ -8,7 +8,7 @@ use App\Models\Article;
 class HomeController extends Controller
 {
     public function getAll(){
-        $article = artikelweb::all();
+        $article = Article::all();
         return view('home',['article'=> $article]);
     }
 
